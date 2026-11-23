@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-pixel-display: "Press Start 2P", monospace;
+    --font-pixel-ui: "Silkscreen", monospace;
+    --font-sans-ui: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-mono-num: "JetBrains Mono", monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b1322;
+    font-family: var(--font-sans-ui);
+  }
+}
+
+.font-pixel-display {
+  font-family: var(--font-pixel-display);
+}
+
+.font-pixel-ui {
+  font-family: var(--font-pixel-ui);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono-num);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Enforce strict nearest-neighbor pixel rendering on Phaser canvas and pixel sprites */
+canvas,
+.pixelated {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Retro 16-bit stepped pixel frame border */
+.pixel-panel {
+  background-color: #101b30;
+  border: 3px solid #e2e8f0;
+  box-shadow:
+    0 4px 0 0 #070d18,
+    inset 0 0 0 3px #1e3256;
+}
+
+.pixel-panel-warm {
+  background-color: #161d2f;
+  border: 3px solid #fbbf24;
+  box-shadow:
+    0 4px 0 0 #78350f,
+    inset 0 0 0 3px #2b354f;
+}
+
+.pixel-btn {
+  position: relative;
+  font-family: var(--font-pixel-ui);
+  transition: transform 100ms cubic-bezier(0.16, 1, 0.3, 1), background-color 120ms ease, border-color 120ms ease;
+}
+
+.pixel-btn:active:not(:disabled) {
+  transform: translateY(2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pixel-btn {
+    transition: none;
+  }
+}

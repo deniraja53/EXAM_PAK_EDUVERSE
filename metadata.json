@@ -1,0 +1,6 @@
+{
+  "name": "EXAM EDUVERSE",
+  "description": "A retro 2D side-scrolling educational adventure platformer starring Deni.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

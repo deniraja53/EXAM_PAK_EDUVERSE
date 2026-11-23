@@ -1,0 +1,148 @@
+import { QuizQuestion } from '../types/gameTypes';
+
+/**
+ * Built-in educational question bank for Stage 2: Savanna Sunland (14 Question Boxes).
+ * Used automatically whenever Teacher Mode does not have an active confirmed question bank.
+ */
+export const LEVEL_02_QUESTIONS: Record<string, QuizQuestion> = {
+  's2-q-1': {
+    id: 's2-q-1',
+    region: 'Sunlit Savanna Gate',
+    prompt: 'Bioma padang rumput luas yang diselingi pepohonan akasia yang jarang disebut ...',
+    options: ['Tundra', 'Sabana', 'Taiga', 'Hutan Mangrove'],
+    correctIndex: 1,
+    explanation: 'Sabana (savanna) adalah padang rumput terbuka dengan pepohonan yang tumbuh terpencar.',
+    rewardScore: 150,
+  },
+  's2-q-2': {
+    id: 's2-q-2',
+    region: 'Sunlit Savanna Gate',
+    prompt: 'Hasil dari 125 × 8 ÷ 10 adalah ...',
+    options: ['10', '80', '100', '125'],
+    correctIndex: 2,
+    explanation: '125 × 8 = 1.000, lalu 1.000 ÷ 10 = 100.',
+    rewardScore: 150,
+  },
+  's2-q-3': {
+    id: 's2-q-3',
+    region: 'Acacia Terrace',
+    prompt: 'Kalajengking di ekosistem sabana termasuk kelompok hewan ...',
+    options: ['Amfibi', 'Arachnida', 'Mamalia', 'Reptil'],
+    correctIndex: 1,
+    explanation: 'Kalajengking berkaki delapan dan termasuk kelas Arachnida bersama laba-laba.',
+    rewardScore: 150,
+  },
+  's2-q-4': {
+    id: 's2-q-4',
+    region: 'Acacia Terrace',
+    prompt: 'Jika sebuah jembatan kayu memiliki panjang 48 meter dan dibagi menjadi 6 ruas sama panjang, panjang tiap ruas adalah ...',
+    options: ['6 meter', '7 meter', '8 meter', '9 meter'],
+    correctIndex: 2,
+    explanation: '48 ÷ 6 = 8 meter untuk setiap ruas jembatan.',
+    rewardScore: 150,
+  },
+  's2-q-5': {
+    id: 's2-q-5',
+    region: 'Acacia Terrace',
+    prompt: 'Tumbuhan akasia di sabana bertahan hidup pada musim kemarau dengan cara memiliki ...',
+    options: [
+      'Akar panjang untuk mencari air tanah',
+      'Daun sangat lebar seperti teratai',
+      'Batang berongga untuk mengapung',
+      'Spora yang terbang di air',
+    ],
+    correctIndex: 0,
+    explanation: 'Akar tunggang yang dalam membantu pohon akasia menjangkau cadangan air tanah.',
+    rewardScore: 150,
+  },
+  's2-q-6': {
+    id: 's2-q-6',
+    region: 'Rope Bridge Crossing',
+    prompt: 'Sebuah segitiga sama sisi memiliki keliling 54 cm. Panjang masing-masing sisinya adalah ...',
+    options: ['14 cm', '16 cm', '18 cm', '27 cm'],
+    correctIndex: 2,
+    explanation: 'Segitiga sama sisi memiliki 3 sisi sama panjang: 54 ÷ 3 = 18 cm.',
+    rewardScore: 150,
+  },
+  's2-q-7': {
+    id: 's2-q-7',
+    region: 'Rope Bridge Crossing',
+    prompt: 'Perubahan batu besar menjadi butiran pasir akibat panas matahari dan angin disebut ...',
+    options: ['Kondensasi', 'Pelapukan fisika', 'Respirasi', 'Fotosintesis'],
+    correctIndex: 1,
+    explanation: 'Suhu siang-malam yang ekstrem dan angin menyebabkan pelapukan fisika pada batuan.',
+    rewardScore: 150,
+  },
+  's2-q-8': {
+    id: 's2-q-8',
+    region: 'Sandstone Mesa',
+    prompt: 'Bentuk desimal dari pecahan 3/4 adalah ...',
+    options: ['0,25', '0,50', '0,75', '0,80'],
+    correctIndex: 2,
+    explanation: '3 dibagi 4 menghasilkan 0,75.',
+    rewardScore: 150,
+  },
+  's2-q-9': {
+    id: 's2-q-9',
+    region: 'Sandstone Mesa',
+    prompt: 'Di Indonesia, wilayah sabana alami yang terkenal terdapat di pulau ...',
+    options: ['Sumatera Utara', 'Nusa Tenggara Timur', 'Kalimantan Barat', 'Riau'],
+    correctIndex: 1,
+    explanation: 'Nusa Tenggara Timur memiliki padang sabana luas seperti di Pulau Sumba dan Komodo.',
+    rewardScore: 150,
+  },
+  's2-q-10': {
+    id: 's2-q-10',
+    region: 'Sandstone Mesa',
+    prompt: 'Urutan rantai makanan yang tepat di padang sabana adalah ...',
+    options: [
+      'Singa -> Zebra -> Rumput',
+      'Rumput -> Zebra -> Singa',
+      'Zebra -> Rumput -> Elang',
+      'Rumput -> Singa -> Zebra',
+    ],
+    correctIndex: 1,
+    explanation: 'Produsen (Rumput) dimakan herbivora (Zebra), lalu dimakan karnivora (Singa).',
+    rewardScore: 150,
+  },
+  's2-q-11': {
+    id: 's2-q-11',
+    region: 'Sandstone Mesa',
+    prompt: 'Hasil dari 3/5 + 1/5 adalah ...',
+    options: ['4/10', '3/5', '4/5', '2/5'],
+    correctIndex: 2,
+    explanation: 'Penyebutnya sudah sama (5), sehingga pembilangnya dijumlahkan: (3 + 1)/5 = 4/5.',
+    rewardScore: 150,
+  },
+  's2-q-12': {
+    id: 's2-q-12',
+    region: 'Horizon Outpost',
+    prompt: 'Antonim (lawan kata) dari kata "gersang" adalah ...',
+    options: ['Kering', 'Subur', 'Panas', 'Terbuka'],
+    correctIndex: 1,
+    explanation: 'Lawan kata gersang (kering/tidak subur) adalah subur.',
+    rewardScore: 150,
+  },
+  's2-q-13': {
+    id: 's2-q-13',
+    region: 'Horizon Outpost',
+    prompt: 'Jika Deni berjalan selama 45 menit dengan jarak 3 km, maka dalam 1,5 jam ia menempuh ...',
+    options: ['4,5 km', '5 km', '6 km', '9 km'],
+    correctIndex: 2,
+    explanation: '1,5 jam = 90 menit = 2 × 45 menit, jadi jaraknya 2 × 3 km = 6 km.',
+    rewardScore: 150,
+  },
+  's2-q-14': {
+    id: 's2-q-14',
+    region: 'Horizon Outpost',
+    prompt: 'Energi terbarukan yang paling melimpah di wilayah sabana yang cerah sepanjang tahun adalah energi ...',
+    options: ['Batu bara', 'Surya (Matahari)', 'Minyak bumi', 'Nuklir'],
+    correctIndex: 1,
+    explanation: 'Wilayah sabana yang terbuka mendapat penyinaran matahari melimpah untuk energi surya.',
+    rewardScore: 150,
+  },
+};
+
+export function getLevel02Question(questionId: string): QuizQuestion {
+  return LEVEL_02_QUESTIONS[questionId] ?? LEVEL_02_QUESTIONS['s2-q-1'];
+}
